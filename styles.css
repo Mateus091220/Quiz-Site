@@ -1,0 +1,172 @@
+/* Fonte minimalista */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFBF5; /* Cor do fundo da marca */
+    color: #2e422b;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contêiner principal */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2e422b;
+    margin-bottom: 20px;
+}
+
+/* Cartão das perguntas */
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+/* Botões principais */
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 14px auto; /* Espaçamento melhorado */
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2e422b, #1c291b);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #1c291b, #2e422b);
+    transform: scale(1.05);
+}
+
+/* Botões de opções */
+.options button {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 12px auto;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+    background: #FFFBF5;
+    color: #2e422b;
+    border: 2px solid #2e422b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.options button:hover {
+    background: #2e422b;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Estilos da aba de resultados */
+.result-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título da recomendação */
+.result-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2e422b;
+    margin-bottom: 15px;
+}
+
+/* Botão "Ver Produto" estilizado */
+#buy-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; /* Centralizado */
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    background: #2e422b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espaço adequado abaixo da descrição */
+}
+
+#buy-button:hover {
+    background: #1c291b;
+    transform: scale(1.05);
+}
+
+/* Imagem do produto recomendado */
+#product-image {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn, .options button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .result-container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    #product-image {
+        max-width: 250px;
+    }
+
+    #buy-button {
+        max-width: 250px; /* Mantém o botão proporcional no mobile */
+        font-size: 16px;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightChosen - Descubra Seu Estilo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>🙌 Descubra o Estilo LightChosen Perfeito para Você!</h1>
+
+    <div id="gender-container" class="card">
+        <h2>Escolha seu gênero:</h2>
+        <button class="btn" onclick="setGender('masculino')">Masculino</button>
+        <button class="btn" onclick="setGender('feminino')">Feminino</button>
+    </div>
+
+    <div id="question-container" class="card hidden">
+        <p class="question" id="question-text">Carregando pergunta...</p>
+        <div class="options" id="options-container"></div>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <h2>✨ Recomendamos para você:</h2>
+        <img id="product-image" src="" alt="Imagem do produto recomendado">
+        <p id="product-description"></p>  <!-- Esse ID precisa existir -->
+        <a id="buy-button" href="#" class="button">Ver produto</a>
+    </div>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
